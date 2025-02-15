@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NITW Institute</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: #0044cc;
+            color: #fff;
+        }
+
+        .logo img {
+            height: 50px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style-type: none;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ffcc00;
+        }
+
+        /* Announcements (Scrolling Text) */
+        .announcements {
+            background-color: #ff6600;
+            padding: 10px;
+            color: #fff;
+            font-size: 18px;
+            text-align: center;
+        }
+
+        /* Image Slider */
+        .slider {
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .slides {
+            display: flex;
+            transition: transform 1s ease-in-out;
+        }
+
+        .slide {
+            width: 100%;
+            flex-shrink: 0;
+        }
+
+        .slide img {
+            width: 100%;
+            height: auto;
+        }
+
+        /* News & Events */
+        .news-events {
+            background-color: #fff;
+            padding: 40px 20px;
+        }
+
+        .news-events h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2rem;
+            color: #0044cc;
+            animation: fadeIn 2s ease-out;
+        }
+
+        .news-cards {
+            display: flex;
+            justify-content: space-around;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background-color: #f4f4f4;
+            width: 45%;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .card p {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        /* Campus Life */
+        .campus-life {
+            padding: 40px 20px;
+            background-color: #eaeaea;
+        }
+
+        .campus-life h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2rem;
+            color: #0044cc;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .news-cards {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .card {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Institute Logo -->
+    <header>
+        <div class="logo">
+            <img src="C:\Users\deeks\Downloads\i love u5.webp" alt="NITW Logo"> <!-- Use your logo image -->
+        </div>
+
+        <!-- Navbar -->
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Departments</a></li>
+                <li><a href="#">Admissions</a></li>
+                <li><a href="#">Research</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Announcements (Moving Text) -->
+    <div class="announcements">
+        <marquee>Important Announcement: Exams are starting from April 1st. Stay prepared!</marquee>
+    </div>
+
+    <!-- Image Slider -->
+    <div class="slider">
+        <div class="slides">
+            <div class="slide"><img src="C:\Users\deeks\Downloads\i love u1.jpeg" alt="Campus 1"></div>
+            <div class="slide"><img src="C:\Users\deeks\Downloads\i love u+4.jpg" alt="Campus 2"></div>
+            <div class="slide"><img src="C:\Users\deeks\Downloads\i love u3.jpg" alt="Campus 3"></div>
+        </div>
+    </div>
+
+    <!-- News & Events -->
+    <section class="news-events">
+        <h2>News & Events</h2>
+        <div class="news-cards">
+            <div class="card">
+                <img src="C:\Users\deeks\OneDrive\Pictures\Screenshots\JAYA3.png" alt="Event 1">
+                <div class="card-content">
+                    <h3>Tech Fest 2025</h3>
+                    <p>Join us for the annual spring spree happening this february. at in our grounds!</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="C:\Users\deeks\Downloads\i love u 6.jpg" alt="Event 2">
+                <div class="card-content">
+                    <h3>Sports Day</h3>
+                    <p>Get ready for the sports day competition with exciting events for everyone!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Campus Life (Images) -->
+    <section class="campus-life">
+        <h2>Campus Life</h2>
+        <div class="gallery">
+            <img src="C:\Users\deeks\Downloads\i love u2.png" alt="Campus Activity 1">
+            <img src="C:\Users\deeks\Downloads\i love u+4.jpg" alt="Campus Activity 2">
+            <img src="C:\Users\deeks\Downloads\i love u3.jpg" alt="Campus Activity 3">
+        </div>
+    </section>
+
+</body>
+</html>
